@@ -7,3 +7,9 @@ body{
     width:100%;
     background-color: pink;
 }
+#box{
+    background-color:green;
+    height:100px;
+    width:100px; 
+
+   }
