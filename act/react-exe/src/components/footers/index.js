@@ -13,15 +13,15 @@ export default class Footer extends Component{
     this.props.upDataAll(e.target.checked);
   }
   render(){
-   // const {todos}=this.props;
+    const {todos}=this.props;
     return(
       <div className='todo-footer'>
       <label>
         <input type='checkbox' onChange={this.upAll}
-        checked={this.props.length===this.countDone()&&this.props.length>0}/>
+        checked={todos.length===this.countDone()&&todos.length>0}/>
       </label>
       <span>
-        <span>已完成{this.countDone()}</span> / 全部{this.props.todos.length}
+        <span>已完成{this.countDone()}</span> / 全部{todos.length}
       </span>
       <button className='btn btn-danger' onClick={this.deleteAlldone} >清除已完成任务</button>
     </div>
